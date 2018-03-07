@@ -1,14 +1,18 @@
 SECTION .text:
-	global strchr:function
-my_strlen:
+	global my_strchr:function
+my_strchr:
 	xor rax, rax
-	mov rsi, [rsi]
 _loop:
-	cmp [rdi + rax], rsi
+	cmp BYTE [rdi + rax], 0
+	jz _end_null
+	cmp sil, [rdi + rax]
     jz _end
 	inc rax
 	jmp _loop
 
+_end_null:
+	xor rax, rax
+	ret
 _end:
-	mov rax, [rdi + rax]
+	lea rax, [rdi + rax]
     ret

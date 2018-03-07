@@ -1,6 +1,13 @@
 NAME		=	libasm.so
 
-SRCS		=	strlen.asm
+SRCS		=	strlen.asm \
+				strchr.asm \
+				memset.asm \
+				memcpy.asm \
+				strcmp.asm \
+				strncmp.asm \
+				strcasecmp.asm \
+				memmove.asm
 
 ASMFLAGS	=	-f elf64
 
