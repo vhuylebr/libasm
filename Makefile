@@ -1,3 +1,10 @@
+##
+## EPITECH PROJECT, 2018
+## asm
+## File description:
+## asm
+##
+
 NAME		=	libasm.so
 
 SRCS		=	strlen.asm \
