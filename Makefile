@@ -7,7 +7,11 @@ SRCS		=	strlen.asm \
 				strcmp.asm \
 				strncmp.asm \
 				strcasecmp.asm \
-				memmove.asm
+				memmove.asm \
+				rindex.asm \
+				strstr.asm \
+				strpbrk.asm \
+				strcspn.asm
 
 ASMFLAGS	=	-f elf64
 

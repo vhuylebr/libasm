@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_strncmp:function
+	global strncmp:function
 
-my_strncmp:
+strncmp:
 	xor rax, rax
     xor r9b, r9b
     xor r8b, r8b
@@ -20,7 +20,8 @@ _loop:
 	jmp _loop
 
 _end:
+    mov r9b, [rsi + rax]
+    mov r8b, [rdi + rax]
     sub r8, r9
-    xor rax, rax
     mov rax, r8
 	ret

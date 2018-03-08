@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_strcasecmp:function
+	global strcasecmp:function
 
-my_strcasecmp:
+strcasecmp:
 	xor rax, rax
     xor r9, r9
     xor r8, r8
@@ -26,6 +26,8 @@ _same_case:
     jmp _loop
 
 _end:
-    xor rax, rax
-    mov al, r8b
+    mov r9b, [rsi + rax]
+    mov r8b, [rdi + rax]
+    sub r8, r9
+    mov rax, r8
 	ret

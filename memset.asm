@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_memset:function
+	global memset:function
 
-my_memset:
+memset:
 	xor rax, rax
 _loop:
 	cmp rax, rdx

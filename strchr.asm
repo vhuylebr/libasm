@@ -1,6 +1,6 @@
 SECTION .text:
-	global my_strchr:function
-my_strchr:
+	global strchr:function
+strchr:
 	xor rax, rax
 _loop:
 	cmp BYTE [rdi + rax], 0

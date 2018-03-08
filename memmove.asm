@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_memmove:function
+	global memmove:function
 
-my_memmove:
+memmove:
 	xor rax, rax
     xor r9b, r9b
 

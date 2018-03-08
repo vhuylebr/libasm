@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_memcpy:function
+	global memcpy:function
 
-my_memcpy:
+memcpy:
 	xor rax, rax
     xor r9b, r9b
 

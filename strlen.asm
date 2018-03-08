@@ -1,7 +1,7 @@
 SECTION .text:
-	global my_strlen:function
+	global strlen:function
 
-my_strlen:
+strlen:
 	xor rax, rax
 _loop:
 	cmp BYTE [rdi + rax], 0
