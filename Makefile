@@ -26,7 +26,7 @@ LDFLAGS		=	-shared
 
 ASM		=	nasm
 
-LD		=	ld
+LD		=	gcc
 
 RM		=	rm -f
 
